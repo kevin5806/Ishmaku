@@ -1,0 +1,82 @@
+@import url(fonts.css);
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(255, 255, 255);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+h1 {
+    font-size: 5em;
+    font-weight: 200;
+    animation: spin 3s cubic-bezier(0.4, 2.5, 0.4, 0.8) infinite;
+
+    color: rgb(0, 0, 0);
+}
+
+.black {
+    background: rgb(0, 0, 0);
+}
+
+.white {
+    color: rgb(255, 255, 255);
+}
+
+.allert-audio {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    z-index: 10;
+
+    position: absolute;
+
+    display: flex;
+
+    flex-direction: column;
+
+    row-gap: 2rem;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.allert-audio p {
+    margin: 0;
+}
+
+.box {
+    display: flex;
+
+    flex-direction: column;
+
+    row-gap: 8px;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.none {
+    display: none !important;
+}
